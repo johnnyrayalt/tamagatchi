@@ -1,11 +1,24 @@
-import React from "react";
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 
-function App(){
-  return (
-    <div>
-      <h1>Hello!</h1>
-    </div>
-  );
-}
+const App = () => (
+  <div>
+    <style jsx global>
+      {`
+        * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+      `}
+    </style>
+    <h1>Hello!</h1>
+    <Switch>
+      <Route exact path='/' component={ Game }>
+    </Switch>
+  </div>
+
+);
+
 
 export default App;
