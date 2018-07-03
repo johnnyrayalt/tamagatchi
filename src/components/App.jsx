@@ -1,5 +1,6 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+import Game from './Game';
 
 const App = () => (
   <div>
@@ -14,7 +15,7 @@ const App = () => (
     </style>
     <h1>Hello!</h1>
     <Switch>
-      <Route exact path='/' component={ Game }>
+      <Route exact path='/' component={ Game } />
     </Switch>
   </div>
 
