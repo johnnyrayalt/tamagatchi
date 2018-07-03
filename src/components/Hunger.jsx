@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Hunger = props => (
   <div className="hunger">
@@ -35,8 +35,8 @@ const Hunger = props => (
     </style>
     <p>Hunger</p>
     <div className="hearts-outer fab">
-        <div className="hearts-inner fab" style={{width: props.hungerLevel.toString() / 10 + '%'}}></div>
-        <p>{props.hungerLevel}</p>
+      <div className="hearts-inner fab" style={{width: props.hungerLevel.toString() / 10 + '%'}}></div>
+      <p>{props.hungerLevel}</p>
     </div>
   </div>
 );

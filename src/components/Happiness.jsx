@@ -34,8 +34,8 @@ const Happiness = props => (
     </style>
     <p>Happiness</p>
     <div className="hearts-outer far">
-        <div className="hearts-inner fa" style={{width: props.happinessLevel.toString() / 10 + '%'}}></div>
-        <p>{props.happinessLevel}</p>
+      <div className="hearts-inner fa" style={{width: props.happinessLevel.toString() / 10 + '%'}}></div>
+      <p>{props.happinessLevel}</p>
     </div>
 
   </div>

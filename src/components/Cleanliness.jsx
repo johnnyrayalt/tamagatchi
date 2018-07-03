@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Cleanliness = props => (
   <div>
@@ -33,14 +33,14 @@ const Cleanliness = props => (
           color: #6d5725;
         }
         `}
-      </style>
-      <div className="poop-outer fas">
-        <div className="poop-inner fas" style={{width: props.cleanlinessLevel.toString() / 10 + '%'}}>
-        </div>
-        <p>{props.cleanlinessLevel}</p>
+    </style>
+    <div className="poop-outer fas">
+      <div className="poop-inner fas" style={{width: props.cleanlinessLevel.toString() / 10 + '%'}}>
       </div>
-
+      <p>{props.cleanlinessLevel}</p>
     </div>
+
+  </div>
 );
 
 Cleanliness.propTypes = {

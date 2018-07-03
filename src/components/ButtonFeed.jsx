@@ -20,6 +20,6 @@ const ButtonFeed = props => (
 
 ButtonFeed.propTypes = {
   handleHungerPet: PropTypes.func
-}
+};
 
 export default ButtonFeed;

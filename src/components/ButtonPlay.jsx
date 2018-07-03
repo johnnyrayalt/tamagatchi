@@ -20,6 +20,6 @@ const ButtonPlay = props => (
 
 ButtonPlay.propTypes = {
   handlePlayingPet: PropTypes.func
-}
+};
 
 export default ButtonPlay;
