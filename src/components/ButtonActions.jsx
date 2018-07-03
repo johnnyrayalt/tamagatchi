@@ -7,10 +7,10 @@ import PropTypes from 'prop-types';
 const ButtonActions = (props) => {
 
   return(
-    <div requestCleanPet={props.requestCleanPet} handleCleaningPet={this.handleCleaningPet} className='buttonContainer'>
-      <ButtonFeed />
-      <ButtonClean />
-      <ButtonPlay />
+    <div className='buttonContainer'>
+      <ButtonFeed handleHungerPet={props.handleHungerPet} />
+      <ButtonClean handleCleaningPet={props.handleCleaningPet} />
+      <ButtonPlay handlePlayingPet={props.handlePlayingPet} />
       <style jsx>{`
           .buttonContainer {
             padding-top: 20px;
@@ -26,8 +26,9 @@ const ButtonActions = (props) => {
 };
 
 ButtonActions.propTypes = {
-  requestCleanPet: PropTypes.array,
-  handleCleaningPet: PropTypes.func
+  handleHungerPet: PropTypes.func,
+  handleCleaningPet: PropTypes.func,
+  handlePlayingPet: PropTypes.func
 };
 
 export default ButtonActions;

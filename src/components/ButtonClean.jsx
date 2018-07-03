@@ -2,10 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const ButtonClean = (props) => {
-
-  function handleClick() {
-    props.handleCleaningPet(props.happiness);
-  }
   return(
     <div>
       <style jsx>
@@ -19,14 +15,13 @@ const ButtonClean = (props) => {
           }
           `}
       </style>
-      <button onClick={handleClick} className="btn">Clean</button>
+      <button onClick={props.handleCleaningPet} className="btn">Clean</button>
     </div>
   );
 };
 
 ButtonClean.propTypes = {
-  handleCleaningPet: PropTypes.func,
-  happiness: PropTypes.number
+  handleCleaningPet: PropTypes.func
 };
 
 export default ButtonClean;

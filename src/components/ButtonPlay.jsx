@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const ButtonPlay = () => (
+const ButtonPlay = props => (
   <div>
     <style jsx>
       {`
@@ -13,8 +14,12 @@ const ButtonPlay = () => (
         }
       `}
     </style>
-    <button className="btn">Play</button>
+    <button onClick={props.handlePlayingPet} className="btn">Play</button>
   </div>
 );
+
+ButtonPlay.propTypes = {
+  handlePlayingPet: PropTypes.func
+}
 
 export default ButtonPlay;

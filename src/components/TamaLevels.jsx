@@ -9,19 +9,23 @@ const TamaLevels = (props) => (
     <style jsx>
       {`
         .levelsContainer {
-          width:100%;
+          width: 100%;
+
         }
         .levelsSize {
-          width:400px;
-          border: 1px solid black;
+          display: flex;
+          justify-content: space-around;
+          width: 400px;
+
           margin: auto;
+          padding: 8px;
         }
         `}
     </style>
     <div className="levelsSize">
       <Hunger hungerLevel={props.hungerLevel}/>
-      <Happiness happinessLevel={props.happinessLevel}/>
       <Cleanliness cleanlinessLevel={props.cleanlinessLevel}/>
+      <Happiness happinessLevel={props.happinessLevel}/>
     </div>
   </div>
 );

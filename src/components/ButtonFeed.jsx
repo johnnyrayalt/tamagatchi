@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const ButtonFeed = () => (
+const ButtonFeed = props => (
   <div>
     <style jsx>
       {`
@@ -13,8 +14,12 @@ const ButtonFeed = () => (
         }
       `}
     </style>
-    <button className="btn">Feed</button>
+    <button onClick={props.handleHungerPet} className="btn">Feed</button>
   </div>
 );
+
+ButtonFeed.propTypes = {
+  handleHungerPet: PropTypes.func
+}
 
 export default ButtonFeed;
