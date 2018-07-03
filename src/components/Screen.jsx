@@ -1,5 +1,5 @@
 import React from 'react';
-import dance from './assets/img/dance.gif';
+import dance from '../assets/img/dance.gif';
 
 const Screen = () => (
   <div className='screenContainer'>
@@ -12,7 +12,6 @@ const Screen = () => (
           width:400px;
           height:200px;
           margin: auto;
-          background-color:blue;
         }
           `}</style>
   </div>
