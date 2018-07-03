@@ -1,20 +1,24 @@
 import React from 'react';
-import ButtonFeed from './ButtonFeed';
+import ButtonActions from './ButtonActions';
+import Screen from './Screen';
 
 class Game extends React.Component {
 
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
-
-    }
+      hunger: 0,
+      happiness: 0,
+      cleanliness: 0
+    };
   }
 
   render () {
     return (
       <div>
         <h1>Game</h1>
-        <ButtonFeed />
+        <Screen />
+        <ButtonActions />
       </div>
     );
   }
