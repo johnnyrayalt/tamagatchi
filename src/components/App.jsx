@@ -1,6 +1,12 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Game from './Game';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faHeart)
+
 
 const App = () => (
   <div>
@@ -13,7 +19,6 @@ const App = () => (
         }
       `}
     </style>
-    <h1>Hello!</h1>
     <Switch>
       <Route exact path='/' component={ Game } />
     </Switch>
